@@ -1,0 +1,341 @@
+{
+  "schema_version": 1,
+  "shop_id": 1,
+  "language_id": 1,
+  "exported_at": "2026-09-17T23:24:48+02:00",
+  "categories": [
+    {
+      "id_category": 1,
+      "parent_id": 0,
+      "name": "Raíz",
+      "slug": "raiz",
+      "position": 0,
+      "depth": 0,
+      "direct_product_count": 0
+    },
+    {
+      "id_category": 2,
+      "parent_id": 1,
+      "name": "Inicio",
+      "slug": "inicio",
+      "position": 0,
+      "depth": 1,
+      "direct_product_count": 40
+    },
+    {
+      "id_category": 4,
+      "parent_id": 2,
+      "name": "HALLOWEEN",
+      "slug": "articulos-decoracion-disfraces-halloween-baratos",
+      "position": 0,
+      "depth": 2,
+      "direct_product_count": 3038
+    },
+    {
+      "id_category": 12,
+      "parent_id": 2,
+      "name": "TALLER PERSONALIZACION",
+      "slug": "taller-personalizacion",
+      "position": 1,
+      "depth": 2,
+      "direct_product_count": 8160
+    },
+    {
+      "id_category": 6,
+      "parent_id": 2,
+      "name": "CUMPLEAÑOS Y FIESTAS TEMATICAS",
+      "slug": "cumpleanos-y-fiestas-tematicas",
+      "position": 2,
+      "depth": 2,
+      "direct_product_count": 1004
+    },
+    {
+      "id_category": 10,
+      "parent_id": 2,
+      "name": "DISFRACES",
+      "slug": "disfraces-baratos",
+      "position": 3,
+      "depth": 2,
+      "direct_product_count": 2982
+    },
+    {
+      "id_category": 3,
+      "parent_id": 2,
+      "name": "DECORACION Y ARTICULOS DE FIESTA",
+      "slug": "decoracion-y-articulos-de-fiesta-baratos",
+      "position": 4,
+      "depth": 2,
+      "direct_product_count": 16
+    },
+    {
+      "id_category": 5,
+      "parent_id": 2,
+      "name": "NAVIDAD",
+      "slug": "articulos-decoracion-navidad",
+      "position": 5,
+      "depth": 2,
+      "direct_product_count": 1377
+    },
+    {
+      "id_category": 9,
+      "parent_id": 2,
+      "name": "ACCESORIOS DISFRACES",
+      "slug": "accesorios-complementos-disfraces",
+      "position": 6,
+      "depth": 2,
+      "direct_product_count": 3505
+    },
+    {
+      "id_category": 234,
+      "parent_id": 2,
+      "name": "Globos foil impresos",
+      "slug": "globos-foil-impresos",
+      "position": 7,
+      "depth": 2,
+      "direct_product_count": 1
+    },
+    {
+      "id_category": 239,
+      "parent_id": 2,
+      "name": "Fiesta blanco",
+      "slug": "fiesta-blanco",
+      "position": 8,
+      "depth": 2,
+      "direct_product_count": 17
+    },
+    {
+      "id_category": 241,
+      "parent_id": 2,
+      "name": "Cumpleaños futbl",
+      "slug": "cumpleanos-futbl",
+      "position": 9,
+      "depth": 2,
+      "direct_product_count": 1
+    },
+    {
+      "id_category": 245,
+      "parent_id": 2,
+      "name": "Globos impresos latex",
+      "slug": "globos-impresos-latex",
+      "position": 10,
+      "depth": 2,
+      "direct_product_count": 53
+    },
+    {
+      "id_category": 257,
+      "parent_id": 2,
+      "name": "Cañones de confeti",
+      "slug": "canones-de-confeti",
+      "position": 11,
+      "depth": 2,
+      "direct_product_count": 1
+    },
+    {
+      "id_category": 258,
+      "parent_id": 2,
+      "name": "Cumpleaños Mickey",
+      "slug": "cumpleanos-mickey",
+      "position": 12,
+      "depth": 2,
+      "direct_product_count": 2
+    },
+    {
+      "id_category": 260,
+      "parent_id": 2,
+      "name": "Cumpleaños -Tortugas Ninja",
+      "slug": "cumpleanos-tortugas-ninja",
+      "position": 13,
+      "depth": 2,
+      "direct_product_count": 1
+    },
+    {
+      "id_category": 261,
+      "parent_id": 2,
+      "name": "Globos R5 12 cm",
+      "slug": "globos-r5-12-cm",
+      "position": 14,
+      "depth": 2,
+      "direct_product_count": 1
+    },
+    {
+      "id_category": 266,
+      "parent_id": 2,
+      "name": "Cubiertos",
+      "slug": "cubiertos",
+      "position": 15,
+      "depth": 2,
+      "direct_product_count": 11
+    },
+    {
+      "id_category": 270,
+      "parent_id": 2,
+      "name": "Fiesta fubol",
+      "slug": "fiesta-fubol",
+      "position": 16,
+      "depth": 2,
+      "direct_product_count": 1
+    },
+    {
+      "id_category": 307,
+      "parent_id": 2,
+      "name": "Cumpleaños Minnions",
+      "slug": "cumpleanos-minnions",
+      "position": 17,
+      "depth": 2,
+      "direct_product_count": 1
+    },
+    {
+      "id_category": 308,
+      "parent_id": 2,
+      "name": "Cumpleaños Plim Plim",
+      "slug": "cumpleanos-plim-plim",
+      "position": 18,
+      "depth": 2,
+      "direct_product_count": 1
+    },
+    {
+      "id_category": 327,
+      "parent_id": 2,
+      "name": "Paletas y sets de maquillaje",
+      "slug": "paletas-y-sets-de-maquillaje",
+      "position": 19,
+      "depth": 2,
+      "direct_product_count": 3
+    },
+    {
+      "id_category": 18,
+      "parent_id": 6,
+      "name": "CUMPLEAÑOS INFANTIL LICENCIA",
+      "slug": "cumpleanos-infantil-licencia",
+      "position": 0,
+      "depth": 3,
+      "direct_product_count": 0
+    },
+    {
+      "id_category": 227,
+      "parent_id": 12,
+      "name": "AM",
+      "slug": "am",
+      "position": 0,
+      "depth": 3,
+      "direct_product_count": 10869
+    },
+    {
+      "id_category": 247,
+      "parent_id": 9,
+      "name": "Maquillaje",
+      "slug": "maquillaje",
+      "position": 8,
+      "depth": 3,
+      "direct_product_count": 193
+    },
+    {
+      "id_category": 231,
+      "parent_id": 3,
+      "name": "Tul",
+      "slug": "tul",
+      "position": 10,
+      "depth": 3,
+      "direct_product_count": 38
+    },
+    {
+      "id_category": 259,
+      "parent_id": 3,
+      "name": "Accesorios cumpleaños",
+      "slug": "accesorios-cumpleanos",
+      "position": 20,
+      "depth": 3,
+      "direct_product_count": 26
+    },
+    {
+      "id_category": 310,
+      "parent_id": 3,
+      "name": "Bengalas",
+      "slug": "bengalas",
+      "position": 22,
+      "depth": 3,
+      "direct_product_count": 15
+    },
+    {
+      "id_category": 312,
+      "parent_id": 3,
+      "name": "Cubiertos",
+      "slug": "cubiertos",
+      "position": 24,
+      "depth": 3,
+      "direct_product_count": 15
+    },
+    {
+      "id_category": 248,
+      "parent_id": 178,
+      "name": "Guirnaldas papel",
+      "slug": "guirnaldas-papel",
+      "position": 0,
+      "depth": 4,
+      "direct_product_count": 30
+    },
+    {
+      "id_category": 249,
+      "parent_id": 65,
+      "name": "Despedidas",
+      "slug": "despedidas",
+      "position": 10,
+      "depth": 4,
+      "direct_product_count": 56
+    },
+    {
+      "id_category": 254,
+      "parent_id": 152,
+      "name": "Globos burbujas y esfericos",
+      "slug": "globos-burbujas-y-esfericos",
+      "position": 15,
+      "depth": 4,
+      "direct_product_count": 7
+    },
+    {
+      "id_category": 255,
+      "parent_id": 66,
+      "name": "Fiesta neon",
+      "slug": "fiesta-neon",
+      "position": 16,
+      "depth": 4,
+      "direct_product_count": 8
+    },
+    {
+      "id_category": 267,
+      "parent_id": 64,
+      "name": "Fiesta 15 cumpleaños",
+      "slug": "fiesta-15-cumpleanos",
+      "position": 28,
+      "depth": 4,
+      "direct_product_count": 7
+    },
+    {
+      "id_category": 15,
+      "parent_id": 18,
+      "name": "Cumpleaños Mickey Mouse",
+      "slug": "cumpleanos-mickey-mouse",
+      "position": 35,
+      "depth": 4,
+      "direct_product_count": 100
+    },
+    {
+      "id_category": 16,
+      "parent_id": 18,
+      "name": "Cumpleaños La Sirenita",
+      "slug": "cumpleanos-la-sirenita",
+      "position": 39,
+      "depth": 4,
+      "direct_product_count": 9
+    },
+    {
+      "id_category": 17,
+      "parent_id": 18,
+      "name": "Cumpleaños Doraemon",
+      "slug": "cumpleanos-doraemon",
+      "position": 44,
+      "depth": 4,
+      "direct_product_count": 17
+    }
+  ]
+}

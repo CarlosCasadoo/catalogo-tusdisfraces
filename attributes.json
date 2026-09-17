@@ -1,0 +1,1598 @@
+{
+  "schema_version": 1,
+  "shop_id": 1,
+  "language_id": 1,
+  "exported_at": "2026-09-17T23:24:48+02:00",
+  "attribute_groups": [
+    {
+      "id_attribute_group": 1,
+      "name": "TALLA",
+      "attributes": [
+        {
+          "id_attribute": 1,
+          "value": "L"
+        },
+        {
+          "id_attribute": 2,
+          "value": "M"
+        },
+        {
+          "id_attribute": 3,
+          "value": "S"
+        },
+        {
+          "id_attribute": 4,
+          "value": "XL"
+        },
+        {
+          "id_attribute": 5,
+          "value": "S-M"
+        },
+        {
+          "id_attribute": 6,
+          "value": "ML"
+        },
+        {
+          "id_attribute": 7,
+          "value": "s"
+        },
+        {
+          "id_attribute": 8,
+          "value": "XXL"
+        },
+        {
+          "id_attribute": 9,
+          "value": "10-12 AÑOS"
+        },
+        {
+          "id_attribute": 10,
+          "value": "5-7 AÑOS"
+        },
+        {
+          "id_attribute": 11,
+          "value": "4-5 AÑOS"
+        },
+        {
+          "id_attribute": 12,
+          "value": "3-4 AÑOS"
+        },
+        {
+          "id_attribute": 13,
+          "value": "5-6 AÑOS"
+        },
+        {
+          "id_attribute": 14,
+          "value": "7-9 AÑOS"
+        },
+        {
+          "id_attribute": 15,
+          "value": "1-2 AÑOS"
+        },
+        {
+          "id_attribute": 16,
+          "value": "XS"
+        },
+        {
+          "id_attribute": 17,
+          "value": "3-5 AÑOS"
+        },
+        {
+          "id_attribute": 18,
+          "value": "6-7 AÑOS"
+        },
+        {
+          "id_attribute": 19,
+          "value": "8-10 AÑOS"
+        },
+        {
+          "id_attribute": 20,
+          "value": "0-6 MESES"
+        },
+        {
+          "id_attribute": 21,
+          "value": "6-12 MESES"
+        },
+        {
+          "id_attribute": 22,
+          "value": "48"
+        },
+        {
+          "id_attribute": 23,
+          "value": "52"
+        },
+        {
+          "id_attribute": 29,
+          "value": "XSS"
+        },
+        {
+          "id_attribute": 30,
+          "value": "XS-S"
+        },
+        {
+          "id_attribute": 46,
+          "value": "9-12 AÑOS"
+        },
+        {
+          "id_attribute": 47,
+          "value": "6-8 AÑOS"
+        },
+        {
+          "id_attribute": 50,
+          "value": "5-8 AÑOS"
+        },
+        {
+          "id_attribute": 51,
+          "value": "4-6 AÑOS"
+        },
+        {
+          "id_attribute": 65,
+          "value": "ESTANDAR ML"
+        },
+        {
+          "id_attribute": 66,
+          "value": "9-11 AÑOS"
+        },
+        {
+          "id_attribute": 67,
+          "value": "7-8 AÑOS"
+        },
+        {
+          "id_attribute": 68,
+          "value": "9-10 AÑOS"
+        },
+        {
+          "id_attribute": 88,
+          "value": "12-24 MESES"
+        },
+        {
+          "id_attribute": 115,
+          "value": "42"
+        },
+        {
+          "id_attribute": 117,
+          "value": "STD"
+        },
+        {
+          "id_attribute": 132,
+          "value": "11-12 AÑOS"
+        },
+        {
+          "id_attribute": 133,
+          "value": "2-3 AÑOS"
+        },
+        {
+          "id_attribute": 134,
+          "value": "12-18 MESES"
+        },
+        {
+          "id_attribute": 135,
+          "value": "18-24 MESES"
+        },
+        {
+          "id_attribute": 136,
+          "value": "10 AÑOS"
+        },
+        {
+          "id_attribute": 137,
+          "value": "6 AÑOS"
+        },
+        {
+          "id_attribute": 138,
+          "value": "XXL-XXXL"
+        },
+        {
+          "id_attribute": 139,
+          "value": "L-XL"
+        },
+        {
+          "id_attribute": 146,
+          "value": "46"
+        },
+        {
+          "id_attribute": 152,
+          "value": "3-6 AÑOS"
+        },
+        {
+          "id_attribute": 153,
+          "value": "7-12 AÑOS"
+        },
+        {
+          "id_attribute": 154,
+          "value": "37-41"
+        },
+        {
+          "id_attribute": 155,
+          "value": "28-35"
+        },
+        {
+          "id_attribute": 156,
+          "value": "22-28"
+        },
+        {
+          "id_attribute": 157,
+          "value": "42-48"
+        },
+        {
+          "id_attribute": 160,
+          "value": "42-44"
+        },
+        {
+          "id_attribute": 168,
+          "value": "9-10AÑOS"
+        },
+        {
+          "id_attribute": 172,
+          "value": "11-14 AÑOS"
+        },
+        {
+          "id_attribute": 173,
+          "value": "7-10 AÑOS"
+        },
+        {
+          "id_attribute": 175,
+          "value": "1-3 AÑOS"
+        },
+        {
+          "id_attribute": 178,
+          "value": "8 AÑOS"
+        },
+        {
+          "id_attribute": 180,
+          "value": "5-9 AÑOS"
+        },
+        {
+          "id_attribute": 181,
+          "value": "13-15 AÑOS"
+        },
+        {
+          "id_attribute": 182,
+          "value": "37-39"
+        },
+        {
+          "id_attribute": 183,
+          "value": "40-42"
+        },
+        {
+          "id_attribute": 184,
+          "value": "43-45"
+        },
+        {
+          "id_attribute": 190,
+          "value": "4 AÑOS"
+        },
+        {
+          "id_attribute": 192,
+          "value": "3 AÑOS"
+        },
+        {
+          "id_attribute": 193,
+          "value": "5 AÑOS"
+        },
+        {
+          "id_attribute": 202,
+          "value": "7 AÑOS"
+        },
+        {
+          "id_attribute": 205,
+          "value": "52 CM"
+        },
+        {
+          "id_attribute": 206,
+          "value": "2 AÑOS"
+        },
+        {
+          "id_attribute": 207,
+          "value": "48 CM"
+        },
+        {
+          "id_attribute": 208,
+          "value": "50 CM"
+        },
+        {
+          "id_attribute": 209,
+          "value": "54 CM"
+        },
+        {
+          "id_attribute": 210,
+          "value": "12 AÑOS"
+        },
+        {
+          "id_attribute": 212,
+          "value": "ROSA"
+        },
+        {
+          "id_attribute": 213,
+          "value": "FUCSIA"
+        },
+        {
+          "id_attribute": 214,
+          "value": "LILA"
+        },
+        {
+          "id_attribute": 215,
+          "value": "COLOR"
+        },
+        {
+          "id_attribute": 216,
+          "value": "AZUL"
+        },
+        {
+          "id_attribute": 217,
+          "value": "ROJO"
+        },
+        {
+          "id_attribute": 218,
+          "value": "VERDE"
+        },
+        {
+          "id_attribute": 219,
+          "value": "BLANCO"
+        },
+        {
+          "id_attribute": 221,
+          "value": "AZUL CLARO"
+        },
+        {
+          "id_attribute": 222,
+          "value": "AZUL OSCURO"
+        },
+        {
+          "id_attribute": 225,
+          "value": "Modelo"
+        },
+        {
+          "id_attribute": 232,
+          "value": "26"
+        },
+        {
+          "id_attribute": 234,
+          "value": "11-15 AÑOS"
+        },
+        {
+          "id_attribute": 236,
+          "value": "PLATA"
+        },
+        {
+          "id_attribute": 237,
+          "value": "ORO"
+        },
+        {
+          "id_attribute": 238,
+          "value": "12-14 AÑOS"
+        },
+        {
+          "id_attribute": 239,
+          "value": "14-16 AÑOS"
+        },
+        {
+          "id_attribute": 240,
+          "value": "8-12 AÑOS"
+        },
+        {
+          "id_attribute": 241,
+          "value": "4-7 AÑOS"
+        },
+        {
+          "id_attribute": 242,
+          "value": "24-18 MESES"
+        },
+        {
+          "id_attribute": 243,
+          "value": "13-14 AÑOS"
+        },
+        {
+          "id_attribute": 244,
+          "value": "12-13 AÑOS"
+        },
+        {
+          "id_attribute": 245,
+          "value": "6-9 MESES"
+        },
+        {
+          "id_attribute": 246,
+          "value": "9-12 MESES"
+        },
+        {
+          "id_attribute": 247,
+          "value": "12-28 MESES"
+        },
+        {
+          "id_attribute": 248,
+          "value": "11-13 AÑOS"
+        },
+        {
+          "id_attribute": 252,
+          "value": "XXS"
+        },
+        {
+          "id_attribute": 253,
+          "value": "14-18 AÑOS"
+        },
+        {
+          "id_attribute": 259,
+          "value": "AZUL PASTEL"
+        },
+        {
+          "id_attribute": 260,
+          "value": "VERDE METALICO"
+        },
+        {
+          "id_attribute": 262,
+          "value": "ESMERALDA"
+        },
+        {
+          "id_attribute": 264,
+          "value": "AZUL SATIN"
+        },
+        {
+          "id_attribute": 268,
+          "value": "SATIN"
+        },
+        {
+          "id_attribute": 270,
+          "value": "LIMA"
+        },
+        {
+          "id_attribute": 271,
+          "value": "AZUL METALICO"
+        },
+        {
+          "id_attribute": 272,
+          "value": "PASTEL"
+        },
+        {
+          "id_attribute": 275,
+          "value": "LIMA SATIN"
+        },
+        {
+          "id_attribute": 278,
+          "value": "XXXL"
+        },
+        {
+          "id_attribute": 281,
+          "value": "7-11 AÑOS"
+        },
+        {
+          "id_attribute": 282,
+          "value": "6-9 AÑOS"
+        },
+        {
+          "id_attribute": 283,
+          "value": "6 MESES"
+        },
+        {
+          "id_attribute": 284,
+          "value": "12 MESES"
+        },
+        {
+          "id_attribute": 293,
+          "value": "7-12 MESES"
+        },
+        {
+          "id_attribute": 295,
+          "value": "10"
+        },
+        {
+          "id_attribute": 296,
+          "value": "4"
+        },
+        {
+          "id_attribute": 297,
+          "value": "6"
+        },
+        {
+          "id_attribute": 332,
+          "value": "30"
+        },
+        {
+          "id_attribute": 333,
+          "value": "32"
+        },
+        {
+          "id_attribute": 334,
+          "value": "34"
+        },
+        {
+          "id_attribute": 345,
+          "value": "54"
+        },
+        {
+          "id_attribute": 346,
+          "value": "31-34"
+        },
+        {
+          "id_attribute": 360,
+          "value": "31-32"
+        },
+        {
+          "id_attribute": 361,
+          "value": "33-34"
+        },
+        {
+          "id_attribute": 362,
+          "value": "27-28"
+        },
+        {
+          "id_attribute": 363,
+          "value": "29-30"
+        },
+        {
+          "id_attribute": 369,
+          "value": "3"
+        },
+        {
+          "id_attribute": 370,
+          "value": "5"
+        },
+        {
+          "id_attribute": 372,
+          "value": "SM"
+        }
+      ]
+    },
+    {
+      "id_attribute_group": 2,
+      "name": "CANTIDAD",
+      "attributes": [
+        {
+          "id_attribute": 24,
+          "value": "1"
+        },
+        {
+          "id_attribute": 25,
+          "value": "100"
+        },
+        {
+          "id_attribute": 26,
+          "value": "125"
+        },
+        {
+          "id_attribute": 27,
+          "value": "500"
+        },
+        {
+          "id_attribute": 28,
+          "value": "1000"
+        },
+        {
+          "id_attribute": 69,
+          "value": "250"
+        },
+        {
+          "id_attribute": 70,
+          "value": "10"
+        },
+        {
+          "id_attribute": 71,
+          "value": "75"
+        },
+        {
+          "id_attribute": 72,
+          "value": "300"
+        },
+        {
+          "id_attribute": 73,
+          "value": "30"
+        },
+        {
+          "id_attribute": 74,
+          "value": "50"
+        },
+        {
+          "id_attribute": 75,
+          "value": "200"
+        },
+        {
+          "id_attribute": 76,
+          "value": "600"
+        },
+        {
+          "id_attribute": 179,
+          "value": "25"
+        },
+        {
+          "id_attribute": 386,
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "id_attribute_group": 3,
+      "name": "COLOR",
+      "attributes": [
+        {
+          "id_attribute": 31,
+          "value": "AMARILLO"
+        },
+        {
+          "id_attribute": 32,
+          "value": "AZUL"
+        },
+        {
+          "id_attribute": 33,
+          "value": "MORADO"
+        },
+        {
+          "id_attribute": 34,
+          "value": "ROJO"
+        },
+        {
+          "id_attribute": 35,
+          "value": "ORO"
+        },
+        {
+          "id_attribute": 36,
+          "value": "PLATA"
+        },
+        {
+          "id_attribute": 37,
+          "value": "NEGRO"
+        },
+        {
+          "id_attribute": 38,
+          "value": "VERDE"
+        },
+        {
+          "id_attribute": 39,
+          "value": "FUCSIA"
+        },
+        {
+          "id_attribute": 40,
+          "value": "NARANJA"
+        },
+        {
+          "id_attribute": 41,
+          "value": "BLANCO"
+        },
+        {
+          "id_attribute": 80,
+          "value": "LUNARES"
+        },
+        {
+          "id_attribute": 81,
+          "value": "ROSA"
+        },
+        {
+          "id_attribute": 144,
+          "value": "AZUL PURPURINA"
+        },
+        {
+          "id_attribute": 145,
+          "value": "ROSA PURPURINA"
+        },
+        {
+          "id_attribute": 150,
+          "value": "GRIS"
+        },
+        {
+          "id_attribute": 151,
+          "value": "MULTICOLOR"
+        },
+        {
+          "id_attribute": 164,
+          "value": "MARRON"
+        },
+        {
+          "id_attribute": 170,
+          "value": "VERDECLARO"
+        },
+        {
+          "id_attribute": 171,
+          "value": "VERDEOSCURO"
+        },
+        {
+          "id_attribute": 174,
+          "value": "AZUL CLARO"
+        },
+        {
+          "id_attribute": 176,
+          "value": "AZUL OSCURO"
+        },
+        {
+          "id_attribute": 177,
+          "value": "VERDE OSCURO"
+        },
+        {
+          "id_attribute": 185,
+          "value": "PAJA"
+        },
+        {
+          "id_attribute": 189,
+          "value": "LILA"
+        },
+        {
+          "id_attribute": 223,
+          "value": "Everest"
+        },
+        {
+          "id_attribute": 224,
+          "value": "Skye"
+        },
+        {
+          "id_attribute": 226,
+          "value": "Modelo1"
+        },
+        {
+          "id_attribute": 228,
+          "value": "AZULOSCURO"
+        },
+        {
+          "id_attribute": 233,
+          "value": "SURTIDOS"
+        },
+        {
+          "id_attribute": 249,
+          "value": "RUBIO"
+        },
+        {
+          "id_attribute": 250,
+          "value": "ROSA CLARO"
+        },
+        {
+          "id_attribute": 251,
+          "value": "AZUL METALIZADO"
+        },
+        {
+          "id_attribute": 254,
+          "value": "BEIGE"
+        },
+        {
+          "id_attribute": 261,
+          "value": "ROSA METALICO"
+        },
+        {
+          "id_attribute": 263,
+          "value": "ROSA SATIN"
+        },
+        {
+          "id_attribute": 265,
+          "value": "BURDEOS SATIN"
+        },
+        {
+          "id_attribute": 266,
+          "value": "ROSA DORADO SATIN"
+        },
+        {
+          "id_attribute": 267,
+          "value": "BLANCO SATIN"
+        },
+        {
+          "id_attribute": 269,
+          "value": "TURQUESA SATIN"
+        },
+        {
+          "id_attribute": 273,
+          "value": "ROSA DORADO"
+        },
+        {
+          "id_attribute": 274,
+          "value": "FUCSIA SATIN"
+        },
+        {
+          "id_attribute": 279,
+          "value": "VERDE CLARO"
+        },
+        {
+          "id_attribute": 280,
+          "value": "CARNE"
+        },
+        {
+          "id_attribute": 285,
+          "value": "AZUL MARINO"
+        },
+        {
+          "id_attribute": 286,
+          "value": "GRANATE"
+        },
+        {
+          "id_attribute": 335,
+          "value": "AZUL SATIN"
+        },
+        {
+          "id_attribute": 336,
+          "value": "AZUL PASTEL"
+        },
+        {
+          "id_attribute": 337,
+          "value": "FRABUESA SATIN"
+        },
+        {
+          "id_attribute": 338,
+          "value": "AZUL CELESTE"
+        },
+        {
+          "id_attribute": 339,
+          "value": "LILA SATIN"
+        },
+        {
+          "id_attribute": 340,
+          "value": "VERDE CLARO SATIN"
+        },
+        {
+          "id_attribute": 341,
+          "value": "VERDE SATIN"
+        },
+        {
+          "id_attribute": 347,
+          "value": "27-30"
+        },
+        {
+          "id_attribute": 373,
+          "value": "MORENO"
+        },
+        {
+          "id_attribute": 374,
+          "value": "AGUAMARINA"
+        },
+        {
+          "id_attribute": 375,
+          "value": "TRANSPARENTE"
+        },
+        {
+          "id_attribute": 376,
+          "value": "AZULREY"
+        },
+        {
+          "id_attribute": 377,
+          "value": "FRAMBUESA"
+        },
+        {
+          "id_attribute": 378,
+          "value": "VIOLETA"
+        },
+        {
+          "id_attribute": 379,
+          "value": "CURBUBA"
+        },
+        {
+          "id_attribute": 380,
+          "value": "METALROSA"
+        },
+        {
+          "id_attribute": 381,
+          "value": "METALCOBRE"
+        },
+        {
+          "id_attribute": 382,
+          "value": "ROSAPASTEL"
+        },
+        {
+          "id_attribute": 383,
+          "value": "AMARILLOPASTEL"
+        },
+        {
+          "id_attribute": 384,
+          "value": "VERDEPASTEL"
+        },
+        {
+          "id_attribute": 385,
+          "value": "AZULPASTEL"
+        },
+        {
+          "id_attribute": 387,
+          "value": "LILAPASTEL"
+        },
+        {
+          "id_attribute": 388,
+          "value": "BLANCOSATIN"
+        },
+        {
+          "id_attribute": 389,
+          "value": "ROSADORADOREFLEX"
+        },
+        {
+          "id_attribute": 390,
+          "value": "SURTIDO"
+        },
+        {
+          "id_attribute": 391,
+          "value": "SURTIDOPASTEL"
+        },
+        {
+          "id_attribute": 392,
+          "value": "FUCSIAREFLEX"
+        },
+        {
+          "id_attribute": 393,
+          "value": "EUCALIPTO"
+        },
+        {
+          "id_attribute": 394,
+          "value": "CRISTALPASTEL"
+        },
+        {
+          "id_attribute": 395,
+          "value": "CHAMPANREFLEX"
+        },
+        {
+          "id_attribute": 396,
+          "value": "TRUFAREFLEX"
+        },
+        {
+          "id_attribute": 397,
+          "value": "VERDESELVA"
+        },
+        {
+          "id_attribute": 398,
+          "value": "ARENA"
+        },
+        {
+          "id_attribute": 399,
+          "value": "LATTE"
+        },
+        {
+          "id_attribute": 400,
+          "value": "CAFE"
+        }
+      ]
+    },
+    {
+      "id_attribute_group": 4,
+      "name": "MODELO",
+      "attributes": [
+        {
+          "id_attribute": 42,
+          "value": "HOMBRE"
+        },
+        {
+          "id_attribute": 43,
+          "value": "MUJER"
+        },
+        {
+          "id_attribute": 44,
+          "value": "CALAVERA"
+        },
+        {
+          "id_attribute": 45,
+          "value": "VAMPIRO"
+        },
+        {
+          "id_attribute": 48,
+          "value": "MI SUEGRA"
+        },
+        {
+          "id_attribute": 49,
+          "value": "MI EX"
+        },
+        {
+          "id_attribute": 54,
+          "value": "ESQUELETOS"
+        },
+        {
+          "id_attribute": 55,
+          "value": "LLAMA"
+        },
+        {
+          "id_attribute": 56,
+          "value": "ANCIANA"
+        },
+        {
+          "id_attribute": 57,
+          "value": "NIÑA"
+        },
+        {
+          "id_attribute": 58,
+          "value": "ZOMBIES"
+        },
+        {
+          "id_attribute": 59,
+          "value": "MIEMBROS"
+        },
+        {
+          "id_attribute": 60,
+          "value": "FANTASMAS"
+        },
+        {
+          "id_attribute": 61,
+          "value": "LADRILLO"
+        },
+        {
+          "id_attribute": 62,
+          "value": "BRUJA"
+        },
+        {
+          "id_attribute": 63,
+          "value": "FANTASMA"
+        },
+        {
+          "id_attribute": 64,
+          "value": "MURCIELAGO"
+        },
+        {
+          "id_attribute": 77,
+          "value": "BUITRE"
+        },
+        {
+          "id_attribute": 78,
+          "value": "BUHO"
+        },
+        {
+          "id_attribute": 82,
+          "value": "MANOS"
+        },
+        {
+          "id_attribute": 83,
+          "value": "DEDO"
+        },
+        {
+          "id_attribute": 84,
+          "value": "OJO"
+        },
+        {
+          "id_attribute": 85,
+          "value": "A"
+        },
+        {
+          "id_attribute": 86,
+          "value": "B"
+        },
+        {
+          "id_attribute": 87,
+          "value": "C"
+        },
+        {
+          "id_attribute": 119,
+          "value": "GATOS"
+        },
+        {
+          "id_attribute": 147,
+          "value": "MODELO1"
+        },
+        {
+          "id_attribute": 148,
+          "value": "MODELO2"
+        },
+        {
+          "id_attribute": 149,
+          "value": "MODELO3"
+        },
+        {
+          "id_attribute": 161,
+          "value": "1"
+        },
+        {
+          "id_attribute": 162,
+          "value": "2"
+        },
+        {
+          "id_attribute": 163,
+          "value": "3"
+        },
+        {
+          "id_attribute": 255,
+          "value": "ALEGRE"
+        },
+        {
+          "id_attribute": 256,
+          "value": "TRISTE"
+        },
+        {
+          "id_attribute": 342,
+          "value": "Modelo 1"
+        },
+        {
+          "id_attribute": 343,
+          "value": "Modelo 2"
+        },
+        {
+          "id_attribute": 344,
+          "value": "Modelo 3"
+        },
+        {
+          "id_attribute": 356,
+          "value": "Arana"
+        },
+        {
+          "id_attribute": 357,
+          "value": "Rata"
+        },
+        {
+          "id_attribute": 358,
+          "value": "Calabaza"
+        },
+        {
+          "id_attribute": 359,
+          "value": "Frankiestein"
+        },
+        {
+          "id_attribute": 371,
+          "value": "4"
+        },
+        {
+          "id_attribute": 404,
+          "value": "SA"
+        },
+        {
+          "id_attribute": 405,
+          "value": "OTB"
+        },
+        {
+          "id_attribute": 406,
+          "value": "WI"
+        }
+      ]
+    },
+    {
+      "id_attribute_group": 5,
+      "name": "LETRA",
+      "attributes": [
+        {
+          "id_attribute": 89,
+          "value": "A"
+        },
+        {
+          "id_attribute": 90,
+          "value": "B"
+        },
+        {
+          "id_attribute": 91,
+          "value": "C"
+        },
+        {
+          "id_attribute": 92,
+          "value": "D"
+        },
+        {
+          "id_attribute": 93,
+          "value": "E"
+        },
+        {
+          "id_attribute": 94,
+          "value": "F"
+        },
+        {
+          "id_attribute": 95,
+          "value": "G"
+        },
+        {
+          "id_attribute": 96,
+          "value": "H"
+        },
+        {
+          "id_attribute": 97,
+          "value": "I"
+        },
+        {
+          "id_attribute": 98,
+          "value": "J"
+        },
+        {
+          "id_attribute": 99,
+          "value": "K"
+        },
+        {
+          "id_attribute": 100,
+          "value": "L"
+        },
+        {
+          "id_attribute": 101,
+          "value": "M"
+        },
+        {
+          "id_attribute": 102,
+          "value": "N"
+        },
+        {
+          "id_attribute": 103,
+          "value": "O"
+        },
+        {
+          "id_attribute": 104,
+          "value": "P"
+        },
+        {
+          "id_attribute": 105,
+          "value": "Q"
+        },
+        {
+          "id_attribute": 106,
+          "value": "R"
+        },
+        {
+          "id_attribute": 107,
+          "value": "S"
+        },
+        {
+          "id_attribute": 108,
+          "value": "T"
+        },
+        {
+          "id_attribute": 109,
+          "value": "U"
+        },
+        {
+          "id_attribute": 110,
+          "value": "V"
+        },
+        {
+          "id_attribute": 111,
+          "value": "W"
+        },
+        {
+          "id_attribute": 112,
+          "value": "XL"
+        },
+        {
+          "id_attribute": 113,
+          "value": "Y"
+        },
+        {
+          "id_attribute": 114,
+          "value": "Z"
+        },
+        {
+          "id_attribute": 120,
+          "value": "Ñ"
+        },
+        {
+          "id_attribute": 121,
+          "value": "&"
+        },
+        {
+          "id_attribute": 122,
+          "value": "@"
+        },
+        {
+          "id_attribute": 287,
+          "value": "X"
+        },
+        {
+          "id_attribute": 288,
+          "value": "#"
+        },
+        {
+          "id_attribute": 289,
+          "value": "!"
+        },
+        {
+          "id_attribute": 290,
+          "value": "%"
+        },
+        {
+          "id_attribute": 291,
+          "value": "?"
+        },
+        {
+          "id_attribute": 330,
+          "value": "€"
+        }
+      ]
+    },
+    {
+      "id_attribute_group": 6,
+      "name": "NUMERO",
+      "attributes": [
+        {
+          "id_attribute": 123,
+          "value": "1"
+        },
+        {
+          "id_attribute": 124,
+          "value": "2"
+        },
+        {
+          "id_attribute": 125,
+          "value": "3"
+        },
+        {
+          "id_attribute": 126,
+          "value": "4"
+        },
+        {
+          "id_attribute": 127,
+          "value": "5"
+        },
+        {
+          "id_attribute": 128,
+          "value": "6"
+        },
+        {
+          "id_attribute": 129,
+          "value": "7"
+        },
+        {
+          "id_attribute": 130,
+          "value": "8"
+        },
+        {
+          "id_attribute": 131,
+          "value": "9"
+        },
+        {
+          "id_attribute": 292,
+          "value": "?"
+        },
+        {
+          "id_attribute": 329,
+          "value": "0"
+        },
+        {
+          "id_attribute": 352,
+          "value": "&"
+        },
+        {
+          "id_attribute": 364,
+          "value": "18"
+        },
+        {
+          "id_attribute": 365,
+          "value": "30"
+        },
+        {
+          "id_attribute": 366,
+          "value": "40"
+        },
+        {
+          "id_attribute": 367,
+          "value": "50"
+        },
+        {
+          "id_attribute": 368,
+          "value": "60"
+        }
+      ]
+    },
+    {
+      "id_attribute_group": 7,
+      "name": "MEDIDA",
+      "attributes": [
+        {
+          "id_attribute": 140,
+          "value": "100 CM"
+        },
+        {
+          "id_attribute": 141,
+          "value": "120 CM"
+        },
+        {
+          "id_attribute": 142,
+          "value": "60 CM"
+        },
+        {
+          "id_attribute": 143,
+          "value": "80 CM"
+        },
+        {
+          "id_attribute": 403,
+          "value": "40 CM"
+        }
+      ]
+    },
+    {
+      "id_attribute_group": 8,
+      "name": "TALLA CALZADO",
+      "attributes": [
+        {
+          "id_attribute": 186,
+          "value": "30"
+        },
+        {
+          "id_attribute": 187,
+          "value": "31"
+        },
+        {
+          "id_attribute": 188,
+          "value": "36"
+        },
+        {
+          "id_attribute": 191,
+          "value": "35-38"
+        },
+        {
+          "id_attribute": 194,
+          "value": "24-25"
+        },
+        {
+          "id_attribute": 195,
+          "value": "32-33"
+        },
+        {
+          "id_attribute": 196,
+          "value": "34-35"
+        },
+        {
+          "id_attribute": 197,
+          "value": "26-27"
+        },
+        {
+          "id_attribute": 198,
+          "value": "30-31"
+        },
+        {
+          "id_attribute": 199,
+          "value": "27-28"
+        },
+        {
+          "id_attribute": 200,
+          "value": "29-30"
+        },
+        {
+          "id_attribute": 201,
+          "value": "31-32"
+        },
+        {
+          "id_attribute": 203,
+          "value": "23-26"
+        },
+        {
+          "id_attribute": 211,
+          "value": "28-29"
+        },
+        {
+          "id_attribute": 227,
+          "value": "24"
+        },
+        {
+          "id_attribute": 229,
+          "value": "34"
+        },
+        {
+          "id_attribute": 230,
+          "value": "32"
+        },
+        {
+          "id_attribute": 231,
+          "value": "22"
+        },
+        {
+          "id_attribute": 331,
+          "value": "28"
+        },
+        {
+          "id_attribute": 349,
+          "value": "AZUL"
+        },
+        {
+          "id_attribute": 350,
+          "value": "ROSA"
+        },
+        {
+          "id_attribute": 353,
+          "value": "35-36"
+        },
+        {
+          "id_attribute": 354,
+          "value": "36-37"
+        },
+        {
+          "id_attribute": 401,
+          "value": "25-26"
+        },
+        {
+          "id_attribute": 402,
+          "value": "27"
+        }
+      ]
+    },
+    {
+      "id_attribute_group": 9,
+      "name": "LETRAS",
+      "attributes": [
+        {
+          "id_attribute": 298,
+          "value": "A"
+        },
+        {
+          "id_attribute": 299,
+          "value": "B"
+        },
+        {
+          "id_attribute": 300,
+          "value": "C"
+        },
+        {
+          "id_attribute": 301,
+          "value": "D"
+        },
+        {
+          "id_attribute": 302,
+          "value": "E"
+        },
+        {
+          "id_attribute": 303,
+          "value": "F"
+        },
+        {
+          "id_attribute": 304,
+          "value": "G"
+        },
+        {
+          "id_attribute": 305,
+          "value": "H"
+        },
+        {
+          "id_attribute": 306,
+          "value": "I"
+        },
+        {
+          "id_attribute": 307,
+          "value": "J"
+        },
+        {
+          "id_attribute": 308,
+          "value": "K"
+        },
+        {
+          "id_attribute": 309,
+          "value": "L"
+        },
+        {
+          "id_attribute": 310,
+          "value": "M"
+        },
+        {
+          "id_attribute": 311,
+          "value": "N"
+        },
+        {
+          "id_attribute": 312,
+          "value": "O"
+        },
+        {
+          "id_attribute": 313,
+          "value": "P"
+        },
+        {
+          "id_attribute": 314,
+          "value": "Q"
+        },
+        {
+          "id_attribute": 315,
+          "value": "R"
+        },
+        {
+          "id_attribute": 316,
+          "value": "S"
+        },
+        {
+          "id_attribute": 317,
+          "value": "T"
+        },
+        {
+          "id_attribute": 318,
+          "value": "U"
+        },
+        {
+          "id_attribute": 319,
+          "value": "V"
+        },
+        {
+          "id_attribute": 320,
+          "value": "W"
+        },
+        {
+          "id_attribute": 321,
+          "value": "X"
+        },
+        {
+          "id_attribute": 322,
+          "value": "Y"
+        },
+        {
+          "id_attribute": 323,
+          "value": "Z"
+        },
+        {
+          "id_attribute": 324,
+          "value": "XL"
+        },
+        {
+          "id_attribute": 325,
+          "value": "5-6 AÑOS"
+        },
+        {
+          "id_attribute": 326,
+          "value": "7-9 AÑOS"
+        },
+        {
+          "id_attribute": 327,
+          "value": "10-12 AÑOS"
+        },
+        {
+          "id_attribute": 328,
+          "value": "3-4 AÑOS"
+        }
+      ]
+    }
+  ]
+}
