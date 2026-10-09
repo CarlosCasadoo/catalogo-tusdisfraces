@@ -4,15 +4,15 @@ Copia de trabajo de los productos activos de **Tienda 1** de PrestaShop (españo
 Se usa como entorno local para reorganizar el catálogo antes de replicarlo. **Modificarla no cambia
 PrestaShop**; la BD SQLite no tiene conexión con producción.
 
-## Estado actual (2026-10-08)
+## Estado actual (2026-10-09)
 
 | Métrica | Valor |
 |---|---|
 | Productos activos | **19.033** |
-| Categorías | **688** (30 reales + 658 provisionales con ID negativo) |
+| Categorías | **722** (30 reales + 692 provisionales con ID negativo) |
 | Filas producto↔categoría (`product_categories`) | **46.539** |
 | Casos documentados en `uncertain_cases` | 32 |
-| Claves en `metadata` | 8 |
+| Claves en `metadata` | 9 |
 | Profundidad máxima del árbol | 6 |
 
 ---
@@ -45,7 +45,7 @@ PrestaShop**; la BD SQLite no tiene conexión con producción.
 | `categories` | Árbol de categorías. `id_category` negativo + `is_new = 1` = categoría provisional; `parent_id` reconstruye el árbol. |
 | `products` | Ficha base: `id_product`, `name`, `reference`, `ean13`, `default_category_id` (la **primaria**) y las copias `*_norm`. |
 | `product_categories` | Relación N:M producto↔categoría. Guarda **solo secundarias** (tipo físico + ancestros hasta la rama `3/9/10`); la primaria **no** se replica aquí (`metadata.replica_rule`). |
-| `metadata` | Claves del proyecto: `schema_version`, `shop_id`, `language_id`, `exported_at`, `replica_rule`, `modelo_dos_ejes`, `punto2_resultado`, `agrupadores_navegacionales`. |
+| `metadata` | Claves del proyecto: `schema_version`, `shop_id`, `language_id`, `exported_at`, `replica_rule`, `modelo_dos_ejes`, `punto2_resultado`, `agrupadores_navegacionales`, `mejora6_tierA_resultado`. |
 | `uncertain_cases` | Casos dudosos y decisiones de categorización documentadas (por producto o generales). |
 | `features` · `feature_values` · `product_feature_values` | Características que describen el producto (no crean variantes). |
 | `attribute_groups` · `attributes` · `combination_attributes` | Grupos (Talla, Color…) y valores que forman combinaciones. |
@@ -65,7 +65,9 @@ PrestaShop**; la BD SQLite no tiene conexión con producción.
 3. **Trabajo realizado** (detalle en `HISTORIAL.md`): reorganización completa por temáticas y tipos
    (Punto 2), menús con >30 hijos aplanados con agrupadores intermedios (Mejora 3: `[18]→5`, `[3]→6`,
    `[-211]→5`, `[9]→4`), slugs únicos y limpios (Mejora 2), categorías vacías/duplicadas eliminadas
-   (Mejora 1) y trazabilidad en `uncertain_cases`/`metadata` (Mejoras 4+5).
+   (Mejora 1), trazabilidad en `uncertain_cases`/`metadata` (Mejoras 4+5) y hojas de >100 productos con
+   mezcla de tipos subdivididas en 34 subcategorías (Mejora 6 Tier A: `-84`, `-607`, `-105`, `-624`,
+   `-74`, `249`).
 4. **Exportación a PrestaShop (Punto 4).** `exportar_prestashop.php` genera `export-prestashop/` con los
    **IDs originales** (negativos incluidos). La traducción de IDs la hace la persona que importa; la BD
    no se modifica al exportar.

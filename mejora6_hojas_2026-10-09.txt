@@ -1,0 +1,94 @@
+MEJORA 6 — Hojas con >=100 productos directos (informe 2026-10-09)
+==========================================================================
+Criterio: categorias sin subcategorias (hojas) con 100+ productos cuya primaria es esa hoja.
+El desglose por secundaria muestra los TIPOS FISICOS que agrupa cada hoja (subdivision natural).
+
+#01    -212  Globos látex lisos                             534 prod. [PROV]
+     Rama: Raíz / Inicio / DECORACION Y ARTICULOS DE FIESTA / Decoración colgante / Globos
+     Secundarias (tipo):   534 × DECORACION Y ARTICULOS DE FIESTA  ·    534 × Globos
+
+#02    -112  Globos cumpleaños                              484 prod. [PROV]
+     Rama: Raíz / Inicio / CUMPLEAÑOS Y FIESTAS TEMATICAS / Material de fiesta / Decoración y ambiente
+     Secundarias (tipo):   484 × CUMPLEAÑOS Y FIESTAS TEMATICAS  ·    484 × Globos  ·    484 × Material de fiesta  ·      5 × Guirnaldas  ·      2 × Luces decorativas  ·      1 × Velas
+
+#03     -84  Accesorios Halloween                            261 prod. [PROV]
+     Rama: Raíz / Inicio / HALLOWEEN / Disfraz Halloween
+     Secundarias (tipo):   261 × HALLOWEEN  ·    261 × Disfraz Halloween  ·     47 × Capas y mantos  ·     38 × Diademas, tiaras y coronas  ·     37 × Pelucas y postizos  ·     23 × Sombreros, gorros y tocados  ·     20 × ACCESORIOS DISFRACES  ·     14 × DECORACION Y ARTICULOS DE FIESTA
+
+#04     -16  Bromas                                          226 prod. [PROV]
+     Rama: Raíz / Inicio / DECORACION Y ARTICULOS DE FIESTA / Efectos, juegos y bromas
+     Secundarias (tipo):   226 × DECORACION Y ARTICULOS DE FIESTA
+
+#05    -230  Confeti                                         173 prod. [PROV]
+     Rama: Raíz / Inicio / DECORACION Y ARTICULOS DE FIESTA / Efectos, juegos y bromas
+     Secundarias (tipo):   173 × DECORACION Y ARTICULOS DE FIESTA
+
+#06    -607  Nochevieja y Año Nuevo                         166 prod. [PROV]
+     Rama: Raíz / Inicio / NAVIDAD
+     Secundarias (tipo):   166 × NAVIDAD  ·     32 × Globos  ·     30 × Gafas  ·     24 × Sombreros, gorros y tocados  ·     19 × Diademas, tiaras y coronas  ·     11 × ACCESORIOS DISFRACES  ·     11 × Objetos e instrumentos  ·      9 × DECORACION Y ARTICULOS DE FIESTA
+
+#07    -624  Decoración Halloween                           152 prod. [PROV]
+     Rama: Raíz / Inicio / HALLOWEEN / Disfraz Halloween
+     Secundarias (tipo):   152 × HALLOWEEN  ·    152 × Disfraz Halloween  ·    115 × DECORACION Y ARTICULOS DE FIESTA  ·     66 × Figuras y adornos decorativos  ·     34 × Decoración colgante (techo, rack y pared)  ·     14 × Textil y telas  ·      7 × Calaveras y cráneos  ·      7 × Lápidas y cementerios
+
+#08    -595  Papá Noel, mamá Noel y Santa Claus            150 prod. [PROV]
+     Rama: Raíz / Inicio / NAVIDAD
+     Secundarias (tipo):   150 × NAVIDAD  ·     69 × Sombreros, gorros y tocados  ·     18 × Globos  ·     15 × Bigotes, barbas y cejas  ·     11 × Pelucas y postizos  ·      6 × ACCESORIOS DISFRACES  ·      5 × DISFRACES  ·      5 × DECORACION Y ARTICULOS DE FIESTA
+
+#09     249  Despedidas                                      147 prod.
+     Rama: Raíz / Inicio / CUMPLEAÑOS Y FIESTAS TEMATICAS / Fiestas especiales
+     Secundarias (tipo):   147 × CUMPLEAÑOS Y FIESTAS TEMATICAS  ·    147 × Fiestas especiales  ·     70 × DISFRACES  ·     31 × DECORACION Y ARTICULOS DE FIESTA  ·      9 × Tul  ·      8 × Bromas  ·      7 × ACCESORIOS DISFRACES  ·      7 × Bandas de celebración
+
+#10    -574  Maquillaje de cara y cuerpo (al agua y gel)     137 prod. [PROV]
+     Rama: Raíz / Inicio / ACCESORIOS DISFRACES / Cabeza, rostro y pelo / Maquillaje
+     Secundarias (tipo):   137 × Maquillaje  ·    137 × ACCESORIOS DISFRACES
+
+#11    -105  Fiesta Halloween                                131 prod. [PROV]
+     Rama: Raíz / Inicio / HALLOWEEN / Disfraz Halloween / Complementos Halloween
+     Secundarias (tipo):   131 × HALLOWEEN  ·    131 × Complementos Halloween  ·     29 × Globos  ·     19 × Guirnaldas  ·     19 × Platos  ·     18 × Vasos  ·     15 × Velas  ·     14 × Servilletas
+
+#12     -53  Unicornio                                       131 prod. [PROV]
+     Rama: Raíz / Inicio / CUMPLEAÑOS Y FIESTAS TEMATICAS / Cumpleaños infantil sin licencia
+     Secundarias (tipo):   131 × CUMPLEAÑOS Y FIESTAS TEMATICAS  ·    131 × Cumpleaños infantil sin licencia  ·     23 × Piñata  ·     19 × DECORACION Y ARTICULOS DE FIESTA  ·     19 × Globos  ·     14 × Guirnaldas  ·     12 × Platos  ·     10 × Vasos
+
+#13      -8  Piñata                                         131 prod. [PROV]
+     Rama: Raíz / Inicio / DECORACION Y ARTICULOS DE FIESTA / Efectos, juegos y bromas
+     Secundarias (tipo):   131 × DECORACION Y ARTICULOS DE FIESTA
+
+#14    -193  Rosa                                            130 prod. [PROV]
+     Rama: Raíz / Inicio / CUMPLEAÑOS Y FIESTAS TEMATICAS / Fiesta colores
+     Secundarias (tipo):   130 × CUMPLEAÑOS Y FIESTAS TEMATICAS  ·    130 × Fiesta colores  ·     27 × DECORACION Y ARTICULOS DE FIESTA  ·     15 × Cajas y estuches  ·     14 × Servilletas  ·     13 × Vasos  ·     12 × Velas  ·     12 × Manteles
+
+#15     -61  Bautizo                                         129 prod. [PROV]
+     Rama: Raíz / Inicio / CUMPLEAÑOS Y FIESTAS TEMATICAS / Fiestas especiales
+     Secundarias (tipo):   129 × CUMPLEAÑOS Y FIESTAS TEMATICAS  ·    129 × Fiestas especiales  ·     71 × Globos  ·     12 × Guirnaldas  ·      9 × DECORACION Y ARTICULOS DE FIESTA  ·      7 × Letras y letreros decorativos  ·      6 × Confeti  ·      5 × Platos
+
+#16    -190  Blanco                                          126 prod. [PROV]
+     Rama: Raíz / Inicio / CUMPLEAÑOS Y FIESTAS TEMATICAS / Fiesta colores
+     Secundarias (tipo):   126 × CUMPLEAÑOS Y FIESTAS TEMATICAS  ·    126 × Fiesta colores  ·     35 × DECORACION Y ARTICULOS DE FIESTA  ·     24 × Cajas y estuches  ·     20 × Platos  ·     18 × Vasos  ·     18 × Servilletas  ·     11 × Manteles
+
+#17    -413  Profesiones                                     121 prod. [PROV]
+     Rama: Raíz / Inicio / ACCESORIOS DISFRACES / Cabeza, rostro y pelo / Sombreros, gorros y tocados
+     Secundarias (tipo):   121 × ACCESORIOS DISFRACES  ·    121 × Sombreros, gorros y tocados
+
+#18     -36  Cumpleaños Princesas Disney                    120 prod. [PROV]
+     Rama: Raíz / Inicio / CUMPLEAÑOS Y FIESTAS TEMATICAS / CUMPLEAÑOS INFANTIL LICENCIA / Cumpleaños Disney y Pixar
+     Secundarias (tipo):   120 × CUMPLEAÑOS INFANTIL LICENCIA  ·    120 × CUMPLEAÑOS Y FIESTAS TEMATICAS  ·     21 × Globos  ·     13 × Platos  ·     11 × DECORACION Y ARTICULOS DE FIESTA  ·     10 × Bolsas  ·      9 × Vasos  ·      9 × Servilletas
+
+#19    -130  Caretas y antifaces                             116 prod. [PROV]
+     Rama: Raíz / Inicio / HALLOWEEN / Mascaras y Caretas Halloween
+     Secundarias (tipo):   116 × HALLOWEEN  ·    116 × Mascaras y Caretas Halloween  ·    116 × Máscaras y antifaces  ·    116 × Antifaces  ·      1 × Disfraz Payaso
+
+#20     -74  Complementos Monstruo                           115 prod. [PROV]
+     Rama: Raíz / Inicio / HALLOWEEN / Disfraz monstruo
+     Secundarias (tipo):   115 × HALLOWEEN  ·    115 × Disfraz monstruo  ·     60 × DECORACION Y ARTICULOS DE FIESTA  ·     44 × Figuras y adornos decorativos  ·     23 × Decoración colgante (techo, rack y pared)  ·      8 × Manos y miembros de monstruo  ·      5 × ACCESORIOS DISFRACES  ·      4 × Guirnaldas
+
+#21      -7  Platos                                          114 prod. [PROV]
+     Rama: Raíz / Inicio / DECORACION Y ARTICULOS DE FIESTA / Mesa, vajilla y candy bar
+     Secundarias (tipo):   114 × DECORACION Y ARTICULOS DE FIESTA
+
+#22    -114  Piñatas cumpleaños                            108 prod. [PROV]
+     Rama: Raíz / Inicio / CUMPLEAÑOS Y FIESTAS TEMATICAS / Material de fiesta / Juegos y efectos de fiesta
+     Secundarias (tipo):   108 × CUMPLEAÑOS Y FIESTAS TEMATICAS  ·    108 × Piñata  ·    108 × Material de fiesta
+
+Total: 22 hojas · 3902 productos (20.5% del catalogo)

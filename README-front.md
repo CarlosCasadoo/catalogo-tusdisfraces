@@ -76,4 +76,7 @@ para el modo exacto. `category_id=0` = todo.
 - Atender los 32 casos de `uncertain_cases`.
 - Revisar los 12 productos «sin tipo» en las ramas `3/9/10` (7 disfraces con primaria `[10]` + 5
   legítimos) y los casos menores `-130` / `-8` / `-7`.
-- Mejora 6: re-evaluar hojas con más de 6 hijos tras el Punto 4.
+- Mejora 6 aplicada en Tier A (2026-10-09): 34 subcategorías nuevas en las 6 hojas de >100 productos
+  con mezcla de tipos (`-84`, `-607`, `-105`, `-624`, `-74`, `249`). Pendiente **Tier B** si se
+  quiere ampliar: `-212` Globos látex 534, `-112` Globos cumpleaños 484, `-16` Bromas, `-230` Confeti
+  y `-8` Piñata.
