@@ -33,8 +33,8 @@ PrestaShop**; la BD SQLite no tiene conexión con producción.
 | `exportar_prestashop.php` | Genera el paquete `export-prestashop/` a partir de la BD (solo lectura). |
 | `export-prestashop/` | Paquete de réplica: `categorias.csv`, `productos.csv`, `productos_categorias.csv` + `guia_replicacion.md`. |
 | `products.json` · `categories.json` · `features.json` · `attributes.json` | Exportación original de Tienda 1 (entrada de la tarea). |
-| `movimientos_*.csv` · `verificacion_*.txt` · `propuesta_*.md` · `informe_cambios-*.md` | Evidencia de las rondas de reorganización pasadas (ver `HISTORIAL.md`). |
 | `consulta_informal.csv` | Consulta de El Informal (Tienda 3) usada como referencia. |
+| `catalogo_tusdisfraces.db.bak-mejora6-tierA-20261009` | Único respaldo conservado (ronda Mejora 6 Tier A); el resto de `.bak-*` y la evidencia de rondas pasadas se eliminaron al quedar documentada en `HISTORIAL.md`. |
 
 ---
 
