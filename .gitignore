@@ -1,0 +1,16 @@
+# Respaldos de la base de datos (nunca se versionan; ~705 MB)
+catalogo_tusdisfraces.db.bak-*
+catalogo_tusdisfraces.db.bak-diag
+
+# Evidencia de rondas de reorganización (documentada en HISTORIAL.md)
+movimientos_*.csv
+verificacion_*.txt
+propuesta_*.md
+propuesta_*.txt
+informe_cambios-*.md
+pendientes_*.txt
+analisis_*.txt
+volcado_*.txt
+disfraces_*.txt
+clasificacion_*.txt
+tablas_proyecto.png

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reorganización de Catálogo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Panel de Reorganización de Productos</h1>
+
+    <div class="grid-container">
+        
+        <!-- COLUMNA IZQUIERDA: Filtros y Acciones -->
+        <div class="card">
+            <button id="btnVerArbol" class="btn-tree" type="button">🌳 Ver árbol de categorías</button>
+
+            <h2>1. Filtrar Origen</h2>
+            <label for="buscarCatOrigen">🔍 Buscar categoría de origen por nombre:</label>
+            <input type="text" id="buscarCatOrigen" placeholder="Escribe para buscar (ej: globo, peluca, fiesta...)" autocomplete="off">
+            <div id="resultadosCatOrigen" class="category-search-results" style="display: none;"></div>
+
+            <label for="selectOrigen">Categoría de origen:</label>
+            <select id="selectOrigen">
+                <!-- Se poblará vía API -->
+            </select>
+
+            <div id="contenedorOrigenHija" style="display: none; margin-top: 10px;">
+                <label for="selectOrigenHija">Subcategoría hija / rama descendiente:</label>
+                <select id="selectOrigenHija">
+                    <!-- Se poblará dinámicamente si la categoría seleccionada tiene hijas -->
+                </select>
+            </div>
+            <p class="help-text" style="margin-top: 5px;">El origen se interpreta como <strong>rama completa</strong> (categoría + descendientes). Elige «Solo directos» para ver únicamente los productos de esa categoría exacta. El contador del selector muestra <code>(directos · productos en rama)</code> cuando ambos difieren.</p>
+
+            <label for="selectTipo" style="margin-top: 10px;">🏷️ Tipo (eje secundario · ramas Decoración / Accesorios / Disfraces):</label>
+            <select id="selectTipo">
+                <option value="">Todos los tipos (sin filtro)</option>
+                <!-- Se poblará vía API -->
+            </select>
+            <p class="help-text" style="margin-top: 5px;">Filtra por tipo físico. A diferencia de la categoría de origen, incluye también los productos cuya categoría <em>principal</em> está en otra rama pero tienen este tipo como categoría <em>secundaria</em> (fuga C).</p>
+
+            <h2 class="section-title">2. Reasignar Selección</h2>
+            <label for="buscarCatDestino">🔍 Buscar categoría de destino por nombre:</label>
+            <input type="text" id="buscarCatDestino" placeholder="Escribe para buscar (ej: globo, peluca, fiesta...)" autocomplete="off">
+            <div id="resultadosCatDestino" class="category-search-results" style="display: none;"></div>
+
+            <label for="selectDestino" style="margin-top: 10px;">Mover productos seleccionados a:</label>
+            <select id="selectDestino">
+                <!-- Se poblará vía API -->
+            </select>
+            <button id="btnMover">Mover Productos</button>
+            <button id="btnAsignarSecundaria" class="btn-secundaria">Añadir como Categoría Secundaria</button>
+            <p class="help-text" style="margin-top: 5px;">«Añadir como Categoría Secundaria» asigna una fila extra en <code>product_categories</code> sin cambiar la categoría principal: la lista de origen y su contador de productos quedan intactos.</p>
+
+            <h2 class="section-title">3. Nueva Categoría</h2>
+            <label for="tipoUbicacionCat">Ubicación en el árbol:</label>
+            <select id="tipoUbicacionCat">
+                <option value="raiz">📁 En la Raíz (Nivel principal bajo Inicio)</option>
+                <option value="rama">🌿 Como subcategoría (Hija de una rama)</option>
+            </select>
+
+            <div id="contenedorPadreCat" style="display: none; margin-top: 5px;">
+                <label for="selectPadreCat">Categoría padre:</label>
+                <select id="selectPadreCat">
+                    <!-- Se poblará vía API -->
+                </select>
+            </div>
+
+            <label for="nuevaCatNombre">Nombre de la categoría:</label>
+            <input type="text" id="nuevaCatNombre" placeholder="Ej: Disfraces Medievales">
+            <button id="btnCrearCat" class="btn-success">Crear Categoría</button>
+
+            <h2 class="section-title">4. Mover Categoría a otra Rama</h2>
+            <p class="help-text">Solo categorías hoja (sin ramas hijas):</p>
+            <label for="selectCatMover">Categoría a mover:</label>
+            <select id="selectCatMover">
+                <!-- Se poblará dinámicamente con categorías hoja -->
+            </select>
+
+            <label for="selectNuevoPadre">Mover dentro de (Nuevo padre):</label>
+            <select id="selectNuevoPadre">
+                <!-- Se poblará vía API con todas las categorías destino válidas -->
+            </select>
+            <button id="btnMoverCat" style="background-color: #17a2b8;">Mover Categoría</button>
+
+            <h2 class="section-title">5. Eliminar Categoría Provisional</h2>
+            <p class="help-text">Solo categorías provisionales creadas desde esta interfaz. Los productos pasarán a Huérfanos.</p>
+            <label for="selectEliminarCat">Categoría a eliminar:</label>
+            <select id="selectEliminarCat">
+                <!-- Se poblará con categorías provisionales -->
+            </select>
+            <button id="btnEliminarCat" style="background-color: #dc3545;" disabled>Eliminar Categoría Provisional</button>
+
+            <h2 class="section-title">6. Gestión de Incertidumbres</h2>
+            <p class="help-text">¿Tienes dudas sobre un movimiento o categorización?</p>
+            <button id="btnRegistrarDudaGeneral" class="btn-warning">Registrar Caso Dudoso</button>
+
+            <h2 class="section-title">7. Editar Nombre de Categoría Provisional</h2>
+            <p class="help-text">Solo categorías provisionales creadas desde esta interfaz.</p>
+            <label for="selectEditarCat">Categoría a renombrar:</label>
+            <select id="selectEditarCat">
+                <!-- Se poblará con categorías provisionales -->
+            </select>
+            <label for="nuevoNombreCat">Nuevo nombre:</label>
+            <input type="text" id="nuevoNombreCat" placeholder="Escribe el nuevo nombre...">
+            <button id="btnGuardarNombreCat" class="btn-edit">Guardar Nombre</button>
+        </div>
+
+        <!-- COLUMNA DERECHA: Lista de Productos -->
+        <div class="card">
+            <h2>Productos en la categoría seleccionada</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; margin-bottom: 10px;">
+                <input type="text" id="inputBuscarProducto" placeholder="🔍 Filtrar por nombre / ref..." autocomplete="off">
+                <input type="text" id="inputBuscarFeature" placeholder="🏷️ Filtrar por característica (ej: Halloween, Adulto, Medieval, Látex...)" autocomplete="off">
+            </div>
+
+            <div class="pagination pagination-top">
+                <button id="btnAnteriorArriba">← Anterior</button>
+                <button id="btnSiguienteArriba">Siguiente →</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="checkbox-col"><input type="checkbox" id="checkTodos"></th>
+                        <th>ID</th>
+                        <th id="thNombre" class="col-ordenable" title="Clic para ordenar por nombre (alterna A→Z / Z→A)">Nombre</th>
+                        <th>Referencia</th>
+                        <th>Cat. Informal</th>
+                        <th>Cat. Secundarias</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaProductos">
+                    <!-- Se cargará vía API -->
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <button id="btnAnterior">Anterior</button>
+                <span id="infoPagina">Página 1</span>
+                <button id="btnSiguiente">Siguiente</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal: categoría de El Informal (Tienda 3) al pulsar sobre la referencia -->
+    <div id="modalInformal" class="modal-overlay" aria-hidden="true">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalInformalTitulo">
+            <button id="btnCerrarModalInformal" class="modal-close" type="button" aria-label="Cerrar">×</button>
+            <h3 id="modalInformalTitulo"></h3>
+            <div id="modalInformalContenido"></div>
+        </div>
+    </div>
+
+    <!-- Modal: árbol de categorías completo (grande y claro) -->
+    <div id="modalArbol" class="modal-overlay" aria-hidden="true">
+        <div class="modal modal-tree" role="dialog" aria-modal="true" aria-labelledby="modalArbolTitulo">
+            <button id="btnCerrarModalArbol" class="modal-close" type="button" aria-label="Cerrar">×</button>
+            <h3 id="modalArbolTitulo">🌳 Árbol de categorías</h3>
+            <div id="modalArbolResumen" class="tree-resumen"></div>
+            <div id="modalArbolContenido" class="tree-contenido"></div>
+        </div>
+    </div>
+
+    <!-- Contenedor de avisos toast auto-desaparecientes -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

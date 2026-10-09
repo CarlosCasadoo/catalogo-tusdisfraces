@@ -1,0 +1,524 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+}
+
+body { 
+    padding: 20px; 
+    background-color: #f4f6f8; 
+    color: #333; 
+}
+
+h1 { 
+    margin-bottom: 20px; 
+    font-size: 1.5rem; 
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+.section-title {
+    margin-top: 30px;
+}
+
+.help-text {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Contenedor principal de 2 columnas */
+.grid-container { 
+    display: grid; 
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px; 
+}
+
+.card { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+/* Panel izquierdo fijo mientras se recorre la lista de productos.
+   Se mantiene visible al hacer scroll y, si es más alto que la ventana,
+   gana su propio scroll interno para no quedar cortado. */
+.grid-container .card:first-child {
+    position: sticky;
+    top: 20px;
+    align-self: start;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    z-index: 5;
+}
+
+/* Botón del árbol de categorías */
+.btn-tree {
+    background-color: #6f42c1;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.btn-tree:hover {
+    background-color: #5a32a3;
+}
+
+/* Modal del árbol de categorías (grande y claro).
+   Se usa mayor especificidad para que gane a la clase base .modal
+   (que de lo contrario le impondría 520px de ancho). */
+.modal-overlay .modal.modal-tree {
+    max-width: 1080px;
+    width: 96%;
+    max-height: 92vh;
+}
+
+.tree-resumen {
+    font-size: 0.82rem;
+    color: #666;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 6px 2px;
+    margin-bottom: 8px;
+}
+
+.tree-contenido {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    overflow-y: auto;
+    max-height: 76vh;
+    padding: 4px 2px;
+}
+
+.tree-item {
+    white-space: nowrap;
+    border-radius: 4px;
+    padding-right: 6px;
+}
+
+.tree-item:hover {
+    background: #f3f0fa;
+}
+
+.tree-rama {
+    color: #5a32a3;
+    font-weight: bold;
+}
+
+.tree-hoja {
+    color: #2c7a2c;
+}
+
+.tree-nivel0 {
+    font-weight: bold;
+    font-size: 1.02rem;
+}
+
+.tree-provisional {
+    color: #c77d00;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.tree-sistema {
+    color: #b03a2e;
+    font-size: 0.78rem;
+}
+
+.tree-prods {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+/* Formularios y Selectores */
+label { 
+    display: block; 
+    margin-top: 10px; 
+    font-weight: bold; 
+    font-size: 0.9rem; 
+}
+
+select, input, button { 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+button { 
+    background-color: #0066cc; 
+    color: white; 
+    font-weight: bold; 
+    cursor: pointer; 
+    margin-top: 15px; 
+    border: none;
+    transition: background-color 0.2s;
+}
+
+button:hover { 
+    background-color: #0052a3; 
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #212529;
+    padding: 8px 16px;
+    min-width: 110px;
+    font-size: 0.9rem;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-copy {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 8px 16px;
+    min-width: 110px;
+    font-size: 0.9rem;
+}
+
+.btn-copy:hover {
+    background-color: #5a6268;
+}
+
+/* Variante compacta para los botones de acción por fila (Marcar Dudoso, Copiar Ref) */
+.btn-copy.btn-mini,
+.btn-warning.btn-mini {
+    padding: 4px 10px;
+    min-width: 0;
+    font-size: 0.78rem;
+    margin-top: 0;
+}
+
+/* Botón editar nombre de categoría provisional */
+.btn-edit {
+    background-color: #17a2b8;
+    color: #fff;
+    padding: 8px 16px;
+    min-width: 110px;
+    font-size: 0.9rem;
+}
+
+.btn-edit:hover {
+    background-color: #138496;
+}
+
+/* Botón añadir categoría secundaria */
+.btn-secundaria {
+    background-color: #fd7e14;
+    color: #fff;
+    padding: 8px 16px;
+    min-width: 110px;
+    font-size: 0.9rem;
+}
+
+.btn-secundaria:hover {
+    background-color: #e86d05;
+}
+
+/* Columna y chips de categorías secundarias.
+   Los chips se apilan uno debajo de otro ocupando el ancho de la celda
+   para que el nombre de la categoría se lea completo. */
+.col-secundarias {
+    text-align: left;
+}
+
+.chip-secundaria {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    background: #fff3cd;
+    border: 1px solid #ffc107;
+    border-radius: 6px;
+    padding: 3px 8px 3px 10px;
+    font-size: 0.8rem;
+    margin: 2px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.chip-secundaria > span {
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+}
+
+.chip-remove {
+    background: transparent;
+    color: #dc3545;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 2px;
+    font-size: 0.8rem;
+    line-height: 1;
+}
+
+.chip-remove:hover {
+    color: #a71d2a;
+}
+
+/* Tabla de Productos */
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 15px; 
+}
+
+th, td { 
+    padding: 10px; 
+    text-align: left; 
+    border-bottom: 1px solid #ddd; 
+    font-size: 0.9rem; 
+}
+
+th { 
+    background-color: #f8f9fa; 
+}
+
+/* Encabezado de columna ordenable (clic para alternar A→Z / Z→A) */
+.col-ordenable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.col-ordenable:hover {
+    background-color: #e9ecef;
+    color: #0052a3;
+}
+
+.checkbox-col { 
+    width: 40px; 
+    text-align: center; 
+}
+
+.check-producto {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #007bff;
+}
+
+/* Paginación */
+.pagination { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-top: 15px; 
+}
+
+.pagination button { 
+    width: auto; 
+    padding: 5px 15px; 
+    margin-top: 0;
+}
+
+/* Paginación superior (Anterior + Siguiente, alineada a la derecha, compacta) */
+.pagination-top {
+    justify-content: flex-end;
+    margin-top: 0;
+    gap: 8px;
+}
+
+/* Sugerencias de Búsqueda de Categorías */
+.category-search-results {
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 4px;
+    max-height: 180px;
+    overflow-y: auto;
+    margin-top: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.category-result-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-result-item:hover {
+    background-color: #e8f4fd;
+    color: #0052a3;
+}
+
+.category-result-item:last-child {
+    border-bottom: none;
+}
+
+.category-result-badge {
+    background: #e9ecef;
+    color: #495057;
+    padding: 2px 6px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+/* Avisos toast auto-desaparecientes */
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 3000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  max-width: min(90vw, 380px);
+  pointer-events: none;
+}
+.toast {
+  background-color: #333;
+  color: #fff;
+  border-radius: 6px;
+  padding: 12px 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: translateX(24px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: auto;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.toast-success {
+  background-color: #28a745;
+}
+.toast-error {
+  background-color: #dc3545;
+}
+.toast-info {
+  background-color: #333;
+}
+
+/* Referencia clicable (aviso de categoría en El Informal) */
+.ref-link {
+  color: #0066cc;
+  text-decoration: underline;
+  cursor: default;
+}
+.ref-link:hover {
+  color: #004a99;
+}
+.ref-link.ref-clickable {
+  cursor: pointer;
+}
+
+/* Columna "Cat. Informal" */
+.col-informal {
+  color: #2c7a2c;
+  font-size: 0.85rem;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.col-informal.sin-informal {
+  color: #999;
+}
+
+/* Modal de categoría en El Informal */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px 24px;
+  max-width: 520px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+.modal h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+}
+.modal-close {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  width: auto;
+  margin-top: 0;
+  padding: 2px 8px;
+  background: transparent;
+  color: #666;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.modal-close:hover {
+  background: #eee;
+  color: #000;
+}
+.modal-prod {
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+}
+.modal-prod-ref {
+  color: #666;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+}
+.modal-sin-datos {
+  color: #888;
+  font-size: 0.9rem;
+  margin: 8px 0;
+}
+.modal-ruta {
+  background: #f8f9fa;
+  border-left: 4px solid #0066cc;
+  border-radius: 4px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+}
+.modal-ruta-item {
+  font-size: 0.9rem;
+  padding: 3px 0;
+}
+.modal-ruta-label {
+  color: #666;
+  font-size: 0.8rem;
+}
+.modal-hoja {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+.modal-todas {
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 4px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
